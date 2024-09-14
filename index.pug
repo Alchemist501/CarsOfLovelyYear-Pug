@@ -1,0 +1,9 @@
+extends base
+block content 
+    #gallery 
+        each car in carsList
+            .car
+                img(src = `/images/${car.image}.jpg`, alt = car.name)
+                p.car__name= car.name
+                p.car__price= car.price 
+        

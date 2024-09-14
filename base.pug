@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        include data/data
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../css/style.css")
+        title #{siteName}
+    body 
+        h1= siteName
+        include includes/navbar
+        block content 
+            //- Include 10 images of cars
+        include includes/navbar
+        block footer 
+            footer 
+                hr   
+                p &copy; #{siteName}
